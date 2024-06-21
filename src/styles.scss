@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: raleway;
+    src: url(assets/fonts/raleway.woff2);
+}
+
+body {
+    margin: 0;
+    font-family: raleway;
+}

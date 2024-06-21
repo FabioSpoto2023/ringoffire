@@ -1,0 +1,46 @@
+.start-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(/assets/img/start-screen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+        height: 100%;
+        color: white;
+    }
+
+    .title-big {
+        font-size: 96px;
+    }
+
+    .title-small {
+        font-size: 64px;
+    }
+
+    .btn-start {
+        border: solid 2px white;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 32px;
+        margin-top: 32px;
+        transition: all 125ms ease-in-out;
+        font-weight: 400;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: white;
+            color: #262626;
+            font-weight: bold;
+        }
+    }
+}
