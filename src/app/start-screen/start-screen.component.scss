@@ -16,30 +16,31 @@
         font-weight: bold;
         height: 100%;
         color: white;
-    }
+        gap: 64px;
 
-    .title-big {
-        font-size: 96px;
-    }
-
-    .title-small {
-        font-size: 64px;
-    }
-
-    .btn-start {
-        border: solid 2px white;
-        padding: 10px;
-        border-radius: 8px;
-        font-size: 32px;
-        margin-top: 32px;
-        transition: all 125ms ease-in-out;
-        font-weight: 400;
-
-        &:hover {
-            cursor: pointer;
-            background-color: white;
-            color: #262626;
-            font-weight: bold;
+        .title-big {
+            font-size: 96px;
         }
-    }
+    
+        .title-small {
+            font-size: 64px;
+        }
+    
+        .btn-start {
+            border: solid 2px white;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 32px;
+            margin-top: 48px;
+            transition: all 125ms ease-in-out;
+            font-weight: 400;
+    
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+                color: #262626;
+                font-weight: bold;
+            }
+        }
+    }    
 }
