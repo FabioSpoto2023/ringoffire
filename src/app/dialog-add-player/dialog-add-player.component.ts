@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
+import { Component } from '@angular/core';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
+
 
 @Component({
 	selector: 'app-dialog-add-player',
@@ -21,5 +22,12 @@ import {MatInputModule} from '@angular/material/input';
 	styleUrl: './dialog-add-player.component.scss'
 })
 export class DialogAddPlayerComponent {
+
+	constructor(private dialog: MatDialogRef<DialogAddPlayerComponent>) { }
+
 	name: string = '';
+
+	closeDialog() {
+		this.dialog.close();
+	}
 }
