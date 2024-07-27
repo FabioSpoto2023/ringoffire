@@ -9,6 +9,7 @@
 
     .card-stack {
         position: relative;
+
         img {
             width: 120px;
             position: absolute;
@@ -36,12 +37,15 @@
             0% {
                 transform: scale(1);
             }
+
             40% {
                 transform: scale(1.3);
             }
+
             60% {
                 transform: scale(1.3);
             }
+
             100% {
                 transform: scale(1) translateX(200px) translateY(-180px) rotate(-10deg);
             }
@@ -53,12 +57,73 @@
     position: absolute;
     right: 0;
     z-index: 1;
+
+    @media (max-width: 780px) {
+        display: none;
+    }
+}
+
+.player-container-responsiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 96px;
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+    display: flex;
+    gap: 16px;
+
+    .player-position-respnsiv {
+        // position: absolute;
+        text-wrap: nowrap;
+        // top: 0;
+        // left: 0;
+        z-index: 1;
+
+        @media (min-width: 780px) {
+            display: none;
+        }
+    }
+}
+
+
+.player-container-responsiv {
+    --sb-track-color: #232E33;
+  --sb-thumb-color: #6BAF8D;
+    --sb-size: 8px;
+}
+
+.player-container-responsiv::-webkit-scrollbar {
+    height: var(--sb-size)
+}
+
+.player-container-responsiv::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+.player-container-responsiv::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .player-container-responsiv {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
 }
 
 .btn-add {
     position: absolute;
     right: 32px;
-    bottom: 32px;
+    bottom: 48px;
+
+    @media (max-width: 780px) {
+        bottom: 128px;
+        right: 16px;
+    }
 }
 
 .game-info {
@@ -66,4 +131,11 @@
     bottom: 32px;
     left: 32px;
     right: 128px;
+
+    @media (max-width: 780px) {
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }

@@ -9,11 +9,24 @@
     color: white;
     font-size: 32px;
 
+    @media (max-width: 780px) {
+        width: fit-content;
+        height: fit-content;
+        border-radius: unset;
+        padding: 16px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
     img {
         width: 64px;
         height: 64px;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
+
+        @media (max-width: 780px) {
+            display: none;
+        }
     }
 
     .player-name {

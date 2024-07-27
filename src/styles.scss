@@ -3,9 +3,22 @@
     src: url(assets/fonts/raleway.woff2);
 }
 
+html,
+body {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     font-family: raleway;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
